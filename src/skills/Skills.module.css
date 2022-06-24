@@ -1,0 +1,22 @@
+.skillsBlock {
+    height: 100vh;
+    background-color: #c3abef;
+}
+
+.skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: #cece64;
+}
+
+.skills {
+    border: 3px solid;
+    width: 100%;
+    /*это значит на всю ширину родителя, высоту не хардкодили, потому что может добавляться потом ещё какой-либо оъект*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

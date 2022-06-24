@@ -1,0 +1,15 @@
+.mainBlock {
+    height: 100vh;
+    background-color: lightpink;
+}
+
+.text {
+    width: 300px;
+    background-color: #bfef6e;
+}
+
+.photo {
+    height: 400px;
+    width: 300px;
+    background-color: #bfef6e;
+}
