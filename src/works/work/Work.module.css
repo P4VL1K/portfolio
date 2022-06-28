@@ -1,0 +1,19 @@
+.work {
+    width: 400px;
+    align-items: center;
+    text-align: center;
+}
+
+.pictureAndBtn {
+    background-color: greenyellow;
+    height: 400px;
+}
+
+.button {
+
+}
+
+
+.ptAndDescr {
+    background-color: lightpink;
+}
