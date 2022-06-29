@@ -7,13 +7,19 @@
 .pictureAndBtn {
     background-color: greenyellow;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
-
 }
 
 
 .ptAndDescr {
     background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }

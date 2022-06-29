@@ -12,7 +12,7 @@ function Work(props: WorkPropsType) {
         <div className={s.work}>
             <div className={s.pictureAndBtn}>
                 <div>
-                    Picture
+                    {props.picture}
                 </div>
                 <div>
                     <button className={s.button}>
@@ -21,8 +21,8 @@ function Work(props: WorkPropsType) {
                 </div>
             </div>
             <div className={s.ptAndDescr}>
-                <div>project title</div>
-                <div>description</div>
+                <div>{props.projectTitle}</div>
+                <div>{props.description}</div>
             </div>
         </div>
     )
