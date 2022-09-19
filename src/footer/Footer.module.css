@@ -1,26 +1,28 @@
 .footerBlock {
-    height: 50vh;
     background-color: #ff88b1;
 }
 
 .footerContainer {
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .itemsContainer {
-    border: 3px solid;
-    width: 600px;
-    height: 70px;
+    border: 1px solid;
+    width: 80%;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .item {
     background-color: #5fe15f;
-    border: 1px solid;
     width: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;

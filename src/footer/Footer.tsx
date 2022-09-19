@@ -10,7 +10,7 @@ function Footer () {
 
     return <div className={s.footerBlock}>
         <div className={` ${sC.container} ${s.footerContainer}`}>
-            <h2>Name</h2>
+            <h2 className={s.title}>Name</h2>
             <div className={s.itemsContainer}>
                 <ItemsContainer/>
                 <ItemsContainer/>

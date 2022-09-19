@@ -4,6 +4,6 @@
 }
 
 .distWorkContainer {
-    border: 3px solid;
+    /*border: 3px solid;*/
     flex-direction: column;
 }
