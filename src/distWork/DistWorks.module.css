@@ -1,9 +1,20 @@
 .distWorkBlock {
     height: 45vh;
-    background-color: #90f1f1;
+    background-color: #18191d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
 }
 
 .distWorkContainer {
     /*border: 3px solid;*/
     flex-direction: column;
+    height: 65%;
+}
+
+.title h3 {
+    font-family: 'Syne', sans-serif;
+    color: #fff;
+    font-weight: 800;
 }

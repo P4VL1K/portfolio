@@ -1,6 +1,13 @@
 .nav {
-    border: 1px solid red;
+    border: 1px solid black;
     width: 300px;
     display: flex;
     justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #212228;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
 }

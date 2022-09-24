@@ -7,7 +7,9 @@ function DistWork () {
     return (
     <div className={s.distWorkBlock}>
         <div className={` ${sC.container} ${s.distWorkContainer}`}>
-            <b>Looking into remote work options</b>
+            <div className={s.title}>
+                <h3>Looking into remote work options</h3>
+            </div>
             <button>Hire me</button>
         </div>
     </div>

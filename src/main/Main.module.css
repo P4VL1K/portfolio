@@ -1,6 +1,15 @@
 .mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background-color: lightpink;
+    background-color: #18191d;
+}
+
+@media screen and (max-width: 749px) {
+    .mainContainer {
+        justify-content: center;
+    }
 }
 
 .text {
@@ -13,3 +22,7 @@
     width: 300px;
     background-color: #bfef6e;
 }
+
+/*.text h1 {*/
+/*    font-family: 'Syne', sans-serif;*/
+/*}*/

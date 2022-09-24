@@ -1,6 +1,10 @@
 .worksBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background-color: #eaea64;
+    background-color: #18191d;
+    border-top: 1px solid white;
 }
 
 .worksContainer {
@@ -16,8 +20,11 @@
     flex-wrap: wrap;
 }
 
-.title {
-    background-color: coral;
+.title h2 {
+    /*background-color: coral;*/
+    font-family: 'Syne', sans-serif;
+    color: #fff;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 999px) {

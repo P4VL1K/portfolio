@@ -1,9 +1,12 @@
 .footerBlock {
     background-color: #ff88b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerContainer {
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,11 +1,15 @@
 .contactsBlock {
     height: 100vh;
     background-color: #b8a0ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactsContainer {
     flex-direction: column;
     justify-content: space-between;
+    height: 65%;
 }
 
 .title {
