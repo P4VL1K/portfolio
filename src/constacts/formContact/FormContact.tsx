@@ -7,9 +7,9 @@ function FormContact () {
 
     return (
             <form className={s.formContacts}>
-                <div><input style={{height: '70px', width: '100%', maxWidth: '500px'}}/></div>
-                <div><input style={{height: '70px', width: '100%', maxWidth: '500px'}}/></div>
-                <div><textarea style={{height: '70px', width: '100%', maxWidth: '500px'}}></textarea></div>
+                <input style={{height: '70px', width: '100%', maxWidth: '400px'}}/>
+                <input style={{height: '70px', width: '100%', maxWidth: '400px'}}/>
+                <textarea style={{height: '70px', width: '100%', maxWidth: '400px'}}/>
             </form>
     )
 }

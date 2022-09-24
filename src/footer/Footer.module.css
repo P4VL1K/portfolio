@@ -27,3 +27,13 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 499px) {
+    .itemsContainer {
+        justify-content: center;
+    }
+    .item {
+        width: 120px;
+        height: 105px;
+    }
+}
