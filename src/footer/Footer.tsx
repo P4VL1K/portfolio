@@ -1,23 +1,26 @@
 import React from "react";
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 import sC from "./../common/styles/Container.module.css";
-import ItemsContainer from "./ItemsContainer";
+import ItemsContainer from "./Items/ItemsContainer";
 
 
-function Footer () {
-
-
+function Footer() {
 
     return <div className={s.footerBlock}>
         <div className={` ${sC.container} ${s.footerContainer}`}>
-            <h2 className={s.title}>Name</h2>
+            <div className={s.title}>
+                <h2>Name</h2>
+            </div>
+
             <div className={s.itemsContainer}>
                 <ItemsContainer/>
                 <ItemsContainer/>
                 <ItemsContainer/>
                 <ItemsContainer/>
             </div>
-            <div><h2>2022</h2></div>
+            <div>
+                <h2>2022</h2>
+            </div>
         </div>
     </div>
 }

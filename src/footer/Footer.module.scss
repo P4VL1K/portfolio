@@ -1,0 +1,41 @@
+@import './src/common/styles/sass/variables';
+
+.footerBlock {
+    background-color: $bgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    .footerContainer {
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .title h2 {
+            font-weight: 800;
+            color: #FFF;
+        }
+        .itemsContainer {
+            border: 1px solid;
+            width: 80%;
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 499px) {
+                    justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

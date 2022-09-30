@@ -1,0 +1,40 @@
+.worksBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #18191d;
+    border-top: 1px solid white;
+    .worksContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        .title h2 {
+            /*background-color: coral;*/
+            font-family: 'Syne', sans-serif;
+            color: #fff;
+            font-weight: 800;
+        }
+        .works {
+            /*border: 3px solid;*/
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 999px) {
+                    justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+
+//@media screen and (max-width: 999px) {
+//    .works {
+//        justify-content: center;
+//    }
+//}
+
+
+

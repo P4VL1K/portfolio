@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Skill.module.css'
+import s from './Skill.module.scss'
 
 
 type SkillsPropsType = {
@@ -12,7 +12,7 @@ function Skill (props: SkillsPropsType ) {
         <div className={s.skill}>
             <div className={s.icon}></div>
             <h3>{props.title}</h3>
-            <div className={s.description}>{props.descriprion}</div>
+            <p className={s.description}>{props.descriprion}</p>
         </div>
     )
 }

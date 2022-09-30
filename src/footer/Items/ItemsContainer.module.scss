@@ -1,0 +1,12 @@
+.item {
+  background-color: #63636c;
+  width: 80px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 499px) {
+      width: 120px;
+      height: 105px;
+  }
+}

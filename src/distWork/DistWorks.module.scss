@@ -1,0 +1,30 @@
+.distWorkBlock {
+  height: 45vh;
+  background-color: #18191d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  .distWorkContainer {
+    /*border: 3px solid;*/
+    flex-direction: column;
+    height: 65%;
+    .title h3 {
+      font-family: 'Syne', sans-serif;
+      color: #fff;
+      font-weight: 800;
+    }
+    .button {
+      border-color: white;
+      color: white;
+      margin-bottom: 10px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 400;
+      line-height: 1.5em;
+    }
+  }
+}
+
+
+
+

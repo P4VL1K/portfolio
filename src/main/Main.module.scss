@@ -1,0 +1,49 @@
+@import './src/common/styles/sass/variables.scss';
+
+.mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $bgColor;
+    .mainContainer{
+        @media screen and (max-width: 749px) {
+                justify-content: center;
+        }
+        .text {
+            width: 280px;
+            background-color: $bgBlocksColor;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 10px 20px;
+            h1 {
+                color: #212228;
+                font-weight: 800;
+                font-size: 24px;
+            }
+            h5 {
+                margin-bottom: 0;
+                color: #212228;
+                font-weight: 600;
+            }
+        }
+        .photo {
+            height: 400px;
+            width: 300px;
+            background-color: #FFF;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*.text h1 {*/
+/*    font-family: 'Syne', sans-serif;*/
+/*}*/
