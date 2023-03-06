@@ -24,7 +24,7 @@ export const Particle = () => {
                       loaded={particlesLoaded}
                       className={s.particle}
                       options={{
-                          fpsLimit: 60,
+                          fpsLimit: 120,
                           particles: {
                               color: { value: "#ffffff" },
                               move: {
@@ -32,19 +32,19 @@ export const Particle = () => {
                                   enable: true,
                                   outModes: "out",
                                   random: false,
-                                  speed: 3,
-                                  straight: false
+                                  speed: 4,
+                                  straight: true
                               },
                               number: {
                                   density: {
-                                      enable: true,
+                                      enable: false,
                                       area: 800
                                   },
-                                  value: 80
+                                  value: 100
                               },
                               opacity: {
                                   animation: {
-                                      enable: true,
+                                      enable: false,
                                       speed: 0.05,
                                       sync: true,
                                       startValue: "max",
