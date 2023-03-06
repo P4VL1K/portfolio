@@ -1,7 +1,8 @@
 @import './src/common/styles/sass/variables';
 
 .footerBlock {
-    background-color: $bgColor;
+    position: relative;
+    background: rgb(33, 34, 40);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,14 +18,28 @@
             color: #FFF;
         }
         .itemsContainer {
-            border: 1px solid;
-            width: 80%;
-            min-height: 70px;
+            width: 30%;
+            min-height: 55px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            @media screen and (max-width: 499px) {
-                    justify-content: center;
+            @media screen and (max-width: 1000px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 90%;
+            }
+            .item {
+                cursor: pointer;
+                &:hover{
+                    svg path {
+                        transition: 0.5s;
+                        fill: #868a9b;
+                    }
+                }
+            }
+            .item svg path{
+                fill: white;
             }
         }
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Work.module.scss'
-import {Button} from "@mui/material";
+import Tilt from "react-parallax-tilt";
 
 type WorkPropsType = {
     picture: string
@@ -9,21 +9,25 @@ type WorkPropsType = {
     style: {
         backgroundImage: string
     }
+    address: string
 }
 
 function Work(props: WorkPropsType) {
     return (
-        <div className={s.work}>
-            <div className={s.image} style={{backgroundImage: props.style.backgroundImage}}>
-                <div>
-                    <Button variant="contained" className={s.button}>watch</Button>
-                </div>
+        <Tilt tiltEnable={false} scale={0.9} transitionSpeed={3000}>
+            <div className={s.work}>
+                <a href={props.address} target={"_blank"}>
+                    <div className={s.image} style={{backgroundImage: props.style.backgroundImage}}>
+
+                    </div>
+
+                    <div className={s.ptAndDescr}>
+                        <h5>{props.projectTitle}</h5>
+                        <p>{props.description}</p>
+                    </div>
+                </a>
             </div>
-            <div className={s.ptAndDescr}>
-                <h5>{props.projectTitle}</h5>
-                <p>{props.description}</p>
-            </div>
-        </div>
+        </Tilt>
     )
 }
 

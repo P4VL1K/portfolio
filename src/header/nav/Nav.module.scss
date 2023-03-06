@@ -1,0 +1,24 @@
+.nav {
+    margin-right: 30px;
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        color: #212228;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .active {
+
+    }
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+

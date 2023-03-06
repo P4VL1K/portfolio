@@ -1,18 +1,16 @@
 import React from "react";
-import s from './Skill.module.scss'
+import s from './Skill.module.scss';
+import {SkillType} from "../Skills";
+import {Fade} from "react-awesome-reveal";
 
-
-type SkillsPropsType = {
-    title: string
-    descriprion: string
-}
-
-function Skill (props: SkillsPropsType ) {
+function Skill(props: SkillType) {
     return (
         <div className={s.skill}>
-            <div className={s.icon}></div>
+            <Fade direction="right" triggerOnce={true}>
+            <div className={s.icon}>{props.svg}</div>
             <h3>{props.title}</h3>
-            <p className={s.description}>{props.descriprion}</p>
+            <p className={s.description}>{props.description}</p>
+            </Fade>
         </div>
     )
 }

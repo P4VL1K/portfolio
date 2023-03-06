@@ -1,9 +1,52 @@
 .formContacts {
   height: 100%;
   padding: 0 12px;
-  background-color: #63636c;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  .button {
+    width: 100%;
+    margin-top: 120px;
+    border: none;
+    color: #eee;
+    background: rgba(139, 145, 150, .2);
+    position: relative;
+    padding: 16px;
+    box-shadow: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40vw;
+
+    input, textarea {
+      margin-bottom: 10px;
+      width: 100%;
+      border: none;
+      color: #eee;
+      background: rgba(139, 145, 150, .2);
+      position: relative;
+      padding: 16px;
+      box-shadow: none;
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    textarea {
+      min-height: 100px;
+    }
+  }
+
+  ::placeholder {
+    color: #eee;
+  }
 }
+

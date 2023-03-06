@@ -1,0 +1,13 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+        height: 0;
+    }
+}

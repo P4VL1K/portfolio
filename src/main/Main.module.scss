@@ -4,33 +4,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
+    padding-top: 10vh;
     background-color: $bgColor;
     .mainContainer{
-        @media screen and (max-width: 749px) {
-                justify-content: center;
+        @media screen and (max-width: 1088px) {
+            justify-content: center;
         }
         .text {
-            width: 280px;
-            background-color: $bgBlocksColor;
+            width: 500px;
             display: flex;
             flex-direction: column;
             padding: 10px 0 10px 20px;
-            h1 {
-                color: #212228;
-                font-weight: 800;
-                font-size: 24px;
+            @media screen and (max-width: 600px) {
+                width: 100%
             }
-            h5 {
+            h1 {
+                color: #fff;
+                font-weight: 800;
+                font-size: 50px;
+                margin: 0;
+                margin-bottom: 10px;
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                }
+            }
+            span {
                 margin-bottom: 0;
-                color: #212228;
-                font-weight: 600;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 2px
+            }
+            p {
+                padding: 30px 0;
+                font-size: 16px;
+                font-weight: 400
             }
         }
         .photo {
-            height: 400px;
-            width: 300px;
+            height: 455px;
+            width: 350px;
             background-color: #FFF;
+            background-position: center;
+            background-size: cover;
+            @media screen and (max-width: 500px) {
+                height: 260px;
+                width: 100%;
+            }
         }
     }
 }

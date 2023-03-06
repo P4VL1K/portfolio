@@ -1,32 +1,32 @@
 @import './src/common/styles/sass/variables';
 
 .contactsBlock {
+    position: relative;
     height: 100vh;
-    background-color: $bgColor;
+    background-image: url(banner.jpg);
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 1px solid white;
     .contactsContainer {
         flex-direction: column;
-        justify-content: space-between;
-        height: 65%;
+        justify-content: flex-start;
+        height: 100%;
         .contacts {
-            /*border: 3px solid;*/
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             width: 70%;
-            height: 50%;
+            height: 70%;
+            @media screen and (max-width: 800px) {
+                width: 90%;
+            }
         }
         .title h2 {
             font-weight: 800;
             color: #FFF;
-        }
-        .button {
-            border-color: white;
-            color: white;
-            margin-bottom: 10px;
-            font-family: 'Syne', sans-serif;
-            font-weight: 400;
-            line-height: 1.5em;
+            font-size: 40px;
         }
     }
 }
